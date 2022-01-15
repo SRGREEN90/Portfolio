@@ -5,7 +5,7 @@ import s from './Work.module.css';
 function Work(props) {
     return (<div className={s.work}>
 
-        <div className={s.image_block}>
+        <div className={s.imageBlock}>
             <div className={s.icon}>
                 {props.title}
             </div>
