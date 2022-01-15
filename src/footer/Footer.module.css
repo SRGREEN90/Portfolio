@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .skillsBlock {
 
     background-color: #9ecdf3;

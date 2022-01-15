@@ -26,7 +26,7 @@ function Contact(props) {
             </div>
             <div className={s.btnWrapper}>
                 <button className={s.btn} type='submit' >
-                    SEND
+                    <h2>SEND</h2>
                 </button>
             </div>
         </div>
