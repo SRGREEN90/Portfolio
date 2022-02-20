@@ -10,8 +10,12 @@ function Remote() {
             <div className={`${styledContainer.container} ${s.remoteContainer}`}>
 
                 <div className={s.btn_wrapper}>
-                    <h2 className={s.img}>I am considering options for remote work</h2>
-                    <button className={s.btn}> <h2> Hire me</h2></button>
+                    <h2 className={s.img}>
+                        I'm considering options for <span className={s.colorTheme}>remote work</span>
+                    </h2>
+                    <button className={s.btn}>
+                        <h2> HIRE ME</h2>
+                    </button>
                 </div>
             </div>
 

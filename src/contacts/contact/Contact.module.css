@@ -13,13 +13,18 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    border: 1px solid;
-    background-color: #5c7959;
 
+    background-color: #191D2A;
 
+    color: #a4acc4;
+    font-family: Nunito,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8rem;
 }
 .btnWrapper{
     padding-top: 30px;
+
 }
 
 .btn{
@@ -27,8 +32,14 @@
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    background-color: #74a864;
+    background-color: #037fff;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    color: #FFF;
+    font-family: Nunito,sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.8rem;
 }

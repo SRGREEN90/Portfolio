@@ -7,20 +7,20 @@ function Contact(props) {
         <div className={s.main}>
             <div>
                 <form className={s.form} >
-                    <ul>
-                        <li>
-                            <label htmlFor="first-name">First Name</label>
-                            <input type="text" id="first-name" placeholder="Enter your first name here"/>
-                        </li>
-                        <li>
-                            <label htmlFor="last-name">Last Name</label>
-                            <input type="text" id="last-name" placeholder="Enter your last name here"/>
-                        </li>
-                        <li>
-                            <label htmlFor="message">Message</label>
-                            <textarea rows="6" id="message" placeholder="Enter your message here"/>
-                        </li>
-                    </ul>
+                    <div>
+                        <div>
+                            <label htmlFor="name">Enter your name</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div>
+                            <label htmlFor="email">Enter your email</label>
+                            <input type="text" id="email" />
+                        </div>
+                        <div>
+                            <label htmlFor="message">Enter your message</label>
+                            <textarea rows="6" id="message" />
+                        </div>
+                    </div>
 
                 </form>
             </div>
