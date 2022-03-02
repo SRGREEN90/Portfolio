@@ -1,13 +1,13 @@
 import React from "react";
-import s from './Nav.module.css';
+import s from './Nav.module.scss';
 
 function Nav() {
     return (
         <div className={s.nav}>
-            <a href=''>Главное</a>
-            <a href=''>Скиллы</a>
-            <a href=''>Проекты</a>
-            <a href=''>Контакты</a>
+            <a className={s.ref} href=''>Main</a>
+            <a className={s.ref} href=''>Skills</a>
+            <a className={s.ref} href=''>Projects</a>
+            <a className={s.ref} href=''>Contacts</a>
         </div>
     );
 }

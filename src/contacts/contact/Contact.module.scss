@@ -1,0 +1,72 @@
+@import "../../common/styles/sass/mixins";
+
+.main {
+  max-width: 100%;
+  .title {
+    color: white;
+    @include text($fontFamily, 30px, 600, 1.8rem);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: start;
+    color: #a4acc4;
+    @include smallGreyText($fontFamily, 18px, 400, 1.8rem);
+
+    .formField {
+      font-size: 1rem;
+      margin-top: 30px;
+
+      .formFieldInput {
+        border: 1px solid #2e344e;
+        font-size: 1rem;
+        height: 50px;
+        padding: 0 15px;
+        vertical-align: middle;
+        min-width: 100%;
+        background: transparent;
+        color: #a4acc4;
+        font-family: Nunito, sans-serif;
+      }
+      .formFieldTextarea{
+        border: 1px solid #2e344e;
+        font-size: 1rem;
+        height: 50px;
+        padding: 0 15px;
+        vertical-align: middle;
+        min-width: 100%;
+        background: transparent;
+        color: #a4acc4;
+        font-family: Nunito, sans-serif;
+        min-height: 70px;
+      }
+    }
+  }
+
+  .btnWrapper {
+    padding-top: 30px;
+
+    .btn {
+      width: 100px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: #037fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #FFF;
+      font-family: Nunito, sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.8rem;
+    }
+
+  }
+}
+
+
+

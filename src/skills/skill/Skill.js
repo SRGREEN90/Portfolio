@@ -9,6 +9,7 @@ function Skill(props) {
         <div className={s.skill}>
 
             <div className={s.icon}>
+                <img src={props.icon} alt=""/>
             </div>
 
             <h3>{props.title}</h3>

@@ -1,0 +1,32 @@
+@import "../../src/common/styles/sass/Variables";
+.contactsBlock {
+    min-height: 100vh;
+    background-color: #10121b;
+
+    .contactsContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        box-sizing: border-box;
+
+        .contacts {
+            border: 1px solid;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            margin-top: 30px;
+            align-items: center;
+
+            @media screen and (min-width: 1255px) {
+                justify-content: space-between;
+            }
+
+        }
+    }
+
+}
+
+
+
+

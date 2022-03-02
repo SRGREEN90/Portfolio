@@ -7,3 +7,11 @@
   line-height: $lineHeight;
   color: $textColor;
 }
+
+@mixin smallGreyText ($fontFamily, $fontSize, $fontWeight, $lineHeight){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $textSecondColor;
+}

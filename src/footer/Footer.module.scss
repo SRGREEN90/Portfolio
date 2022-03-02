@@ -1,0 +1,32 @@
+@import "../common/styles/sass/mixins.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+.skillsBlock {
+    background-color: #10121b;
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        .title {
+            @include smallGreyText($fontFamily, 18px, 600, 1.8rem);
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+
+        }
+    }
+}
+
+
+
+
+
+
+

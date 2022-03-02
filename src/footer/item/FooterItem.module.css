@@ -1,14 +1,8 @@
-/*.item{*/
-/*    width: 250px;*/
-/*    background-color: #d9b08b;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    text-align: center;*/
-/*}*/
 
 .icon{
-    width: 60px;
+    font-size: 1.1rem;
     height: 60px;
-    background-color: #856c53;
+    line-height: 60px;
+    width: 60px;
+
 }

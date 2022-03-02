@@ -18,7 +18,7 @@
 .icon{
     width: 60px;
     height: 60px;
-    background-color: #856c53;
+   border-radius: 100px;
 }
 
 .description{

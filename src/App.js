@@ -5,7 +5,7 @@ import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import Remote from "./remoteWork/Remotes";
-import Contacts from "./contacts/Cntacts";
+import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 
 function App() {
