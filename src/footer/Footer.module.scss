@@ -1,11 +1,12 @@
 @import "../common/styles/sass/mixins.scss";
+@import "../common/styles/sass/Variables";
 
 *{
     box-sizing: border-box;
 }
 
 .skillsBlock {
-    background-color: #10121b;
+    background-color: $bgSecondColor;
     .container {
         flex-direction: column;
         justify-content: flex-start;

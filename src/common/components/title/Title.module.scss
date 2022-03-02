@@ -3,6 +3,11 @@
 .title {
   padding-bottom: 15px;
   margin: 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 .title h2 {
   font-weight: 700;
@@ -13,34 +18,28 @@
   line-height: 3.2857rem;
   color: $textColor;
   font-family: Nunito, sans-serif;
+  &::before {
+    content: "";
+    border-radius: 100px;
+    bottom: 0;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    background: $primarySecondColor;
+    width: 100px;
+    display: inline-block;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    background: $primaryColor;
+    width: 35px;
+    border-radius: 100px;
+    bottom: 0;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
 }
 
-::before {
-  border-radius: 100px;
-  bottom: 0;
-  content: "";
-  height: 5px;
-  left: 0;
-  position: absolute;
-  top: auto;
-  background: $primarySecondColor;
-  width: 100px;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-::after {
-  background: $primaryColor;
-  width: 35px;
-  border-radius: 100px;
-  bottom: 0;
-  content: "";
-  height: 5px;
-  left: 0;
-  position: absolute;
-  top: auto;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}

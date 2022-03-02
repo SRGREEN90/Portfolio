@@ -10,26 +10,18 @@
     display: flex;
     margin-top: 30px;
     padding: 30px;
+    align-items: center;
     @include smallGreyText($fontFamily, 18px, 400, 1.8rem);
-    *, :after, :before {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
     .myContactInfoBlockIcon {
       border: 1px solid #2e344e;
-
-
       display: flex;
       justify-content: center;
       align-items: center;
-
       flex: 0 0 40px;
       height: 40px;
       line-height: 66px;
       margin-right: 20px;
-
       text-align: center;
       width: 40px;
 

@@ -16,7 +16,7 @@ function Projects() {
     const todoStyle = {
         backgroundImage: `url(${todo})`
     };
-
+// <span className={s.hiddenText}>{props.hiddenText}</span>
     return (
         <div className={s.projectsBlock}>
             <div className={`${styledContainer.container} ${s.projectsContainer}`}>

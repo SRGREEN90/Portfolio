@@ -4,36 +4,45 @@
 .mainBlock {
     height: 100vh;
     background-color: #10121b;
+
     .text {
         max-width: 700px;
-        background-color: #191D2A;
         color: #a4acc4;
         @include smallGreyText($fontFamily, 18px, 400, 1.8rem);
-        .myName{
+
+        .myName {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
+
     .photo {
-        width: 300px;
+        width: 270px;
         height: 400px;
         background-color: #191D2A;
+
+        .myPhoto {
+            width: 270px;
+            height: 400px;
+
+        }
+    }
+
+
+    .text h1 {
+        font-weight: 700;
+        margin: 0;
+        text-transform: capitalize;
+        font-size: 2.57rem;
+        color: #fff;
+        font-family: Nunito, sans-serif;
+
+        .color {
+            color: $primaryColor;
+        }
     }
 }
-
-
-.text h1{
-    font-weight: 700;
-    margin: 0;
-    text-transform: capitalize;
-    font-size: 2.57rem;
-    color: #fff;
-    font-family: Nunito, sans-serif;
-    .color{
-        color: $primaryColor;
-    }
-}
-
 
 
