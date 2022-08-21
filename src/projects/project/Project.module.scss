@@ -7,7 +7,6 @@
   flex-direction: column;
 
   .imageBlock {
-    border-radius: 20px;
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -16,22 +15,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    .vewBtn {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 120px;
-      height: 40px;
-      background-color: $primaryColor;
-      border-radius: 10px;
-
-      @include text($fontFamily, 15px, 400, 1.8rem);
-    }
   }
 
   .projectInfo {
-    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    left: 0;
     .projectName {
       font-weight: 600;
       margin-top: -8px;

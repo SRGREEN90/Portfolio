@@ -2,47 +2,81 @@
 @import "../common/styles/sass/Variables";
 
 .mainBlock {
-    height: 100vh;
-    background-color: #10121b;
+  height: 100vh;
+  background-color: #10121b;
 
-    .text {
-        max-width: 700px;
-        color: #a4acc4;
-        @include smallGreyText($fontFamily, 18px, 400, 1.8rem);
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+  }
 
-        .myName {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+
+  .text {
+    padding-top: 20px;
+    max-width: 700px;
+    color: #a4acc4;
+    @include smallGreyText($fontFamily, 18px, 400, 1.8rem);
+
+    .myName {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .color {
+        color: $primaryColor;
+        padding-left: 40px;
+      }
     }
 
-    .photo {
-        width: 270px;
-        height: 400px;
-        background-color: #191D2A;
-
-        .myPhoto {
-            width: 270px;
-            height: 400px;
-
-        }
+    .devTitle {
+      padding-top: 10px;
     }
+  }
 
-
-    .text h1 {
-        font-weight: 700;
-        margin: 0;
-        text-transform: capitalize;
-        font-size: 2.57rem;
-        color: #fff;
-        font-family: Nunito, sans-serif;
-
-        .color {
-            color: $primaryColor;
-        }
+  .photo {
+   position: relative;
+   z-index: 1;
+    @media screen and (min-width: 1143px) {
+      padding-top: 50px;
     }
+    .myPhoto {
+      width: 350px;
+      height: 430px;
+      background-position: 80% 0;
+      @media screen and (max-width: 320px) {
+        height: 360px;
+        width: 260px;
+        transition: .5s;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 105%;
+      height: 110%;
+      border: 5px solid #037fff;
+      left: 15px;
+      top: -15px;
+      z-index: -1;
+    }
+  }
+
+  .text h1 {
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 2.57rem;
+    color: #fff;
+    font-family: Nunito, sans-serif;
+  }
+
+
 }
 
 

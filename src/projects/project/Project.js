@@ -1,12 +1,13 @@
 import React from "react";
 import s from './Project.module.scss';
+import Button from "../../common/components/button/Button";
 
 
 function Project(props) {
     return <div className={s.project}>
 
         <div className={s.imageBlock} style={props.style}>
-            <a className={s.vewBtn}>{props.title}</a>
+                <Button  title={'WATCH'}/>
         </div>
 
         <div className={s.projectInfo}>

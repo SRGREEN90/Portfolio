@@ -5,7 +5,7 @@ import Project from "./project/Project";
 import Title from "../common/components/title/Title";
 import social from "../../src/assets/image/social.jpg";
 import todo from "../../src/assets/image/todo.jpeg";
-
+import Fade from 'react-reveal/Fade';
 
 
 function Projects() {
@@ -16,16 +16,17 @@ function Projects() {
     const todoStyle = {
         backgroundImage: `url(${todo})`
     };
-// <span className={s.hiddenText}>{props.hiddenText}</span>
-    return (
-        <div className={s.projectsBlock}>
-            <div className={`${styledContainer.container} ${s.projectsContainer}`}>
-               <Title text={'My projects'}/>
 
+    return (
+        <div id="projects" className={s.projectsBlock}>
+            <div  className={`${styledContainer.container} ${s.projectsContainer}`}>
+               <Title text={'My projects'}/>
+                <Fade right>
                 <div className={s.projects}>
-                    <Project style={socialStyle} title={'WATCH'} projectName={'Social network'} description={'description for Project'}/>
-                    <Project style={todoStyle} title={'WATCH'} projectName={'Todolist'} description={'description for Project'}/>
+                    <Project style={socialStyle} projectName={'Social network'} description={'description for Project'}/>
+                    <Project style={todoStyle} projectName={'Todolist'} description={'description for Project'}/>
                 </div>
+                </Fade >
             </div>
 
         </div>
